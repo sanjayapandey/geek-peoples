@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.1.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_1_0.dtd">
+<service-builder
+	package-path="com.lftechnology.geekpeoples.guestportlet">
+	<author>syanjo</author>
+	<namespace>GP</namespace>
+
+	<entity name="Question" local-service="true" remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="questionId" type="long" primary="true" />
+
+		<!-- Audit fields -->
+
+		<column name="question" type="String" />
+		<column name="userId" type="long" />
+		<column name="tagId" type="long" />
+		<column name="createDate" type="Date" />
+		
+		<!-- Order -->
+
+<!-- 		<order by="asc"> -->
+<!-- 			<order-column name="point" /> -->
+<!-- 		</order> -->
+
+		<!-- Finder methods -->
+
+<!-- 		<finder name="Field2" return-type="Collection"> -->
+<!-- 			<finder-column name="field2" /> -->
+<!-- 		</finder> -->
+
+	<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="groupId" type="long" />
+		
+
+	</entity>
+</service-builder>

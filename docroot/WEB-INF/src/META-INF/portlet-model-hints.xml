@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.lftechnology.geekpeoples.guestportlet.model.Question">
+		<field name="questionId" type="long" />
+		<field name="question" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="userId" type="long" />
+		<field name="tagId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+	</model>
+</model-hints>
